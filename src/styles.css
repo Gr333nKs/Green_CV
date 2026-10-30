@@ -217,7 +217,34 @@ img {
 .click-hint img {
   width: 18px;
   height: 26px;
+  animation: cursor-tap 2.6s var(--ease-out) infinite;
   object-fit: cover;
+  transform-origin: 2px 2px;
+  will-change: transform;
+}
+
+@keyframes cursor-tap {
+  0%,
+  38%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  52% {
+    transform: translate(-5px, -6px) scale(1);
+  }
+
+  58% {
+    transform: translate(-5px, -6px) scale(0.86);
+  }
+
+  64% {
+    transform: translate(-5px, -6px) scale(1);
+  }
+
+  78% {
+    transform: translate(0, 0) scale(1);
+  }
 }
 
 .timeline {
