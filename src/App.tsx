@@ -242,6 +242,14 @@ function Hero({ expanded, onToggle }: { expanded: boolean; onToggle: () => void 
       <div className="identity">
         <strong>Ксюша Шевеленкова</strong>
         <span>Москва</span>
+        <a
+          className="resume-download"
+          href="/resume.pdf"
+          download="Шевеленкова Ксения — Резюме.pdf"
+        >
+          <img src={`${A}resume-download.svg`} alt="" aria-hidden="true" />
+          Резюме
+        </a>
       </div>
 
       <div className="portrait-stage">
