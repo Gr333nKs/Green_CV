@@ -687,7 +687,7 @@ img {
   }
 
   .hero.is-expanded {
-    height: 512px;
+    height: 524px;
   }
 
   .identity {
@@ -700,7 +700,7 @@ img {
   }
 
   .is-expanded .portrait-stage {
-    top: 87px;
+    top: 99px;
   }
 
   .hero-copy {
@@ -708,7 +708,7 @@ img {
   }
 
   .is-expanded .hero-copy {
-    top: 325px;
+    top: 337px;
   }
 
   .click-hint {
