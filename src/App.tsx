@@ -281,12 +281,11 @@ function FloatingMenu() {
   const links = ["Dprofile", "Behance", "Написать мне", "Почта"];
   return (
     <nav className="floating-menu" aria-label="Контакты">
-      {links.map((link, index) => (
+      {links.map((link) => (
         <span className="menu-item" key={link}>
           <a href="#" onClick={(event) => event.preventDefault()}>
             {link}
           </a>
-          {index < links.length - 1 && <i aria-hidden="true">×</i>}
         </span>
       ))}
     </nav>
