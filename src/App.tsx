@@ -278,13 +278,23 @@ function Hero({ expanded, onToggle }: { expanded: boolean; onToggle: () => void 
 }
 
 function FloatingMenu() {
-  const links = ["Dprofile", "Behance", "Написать мне", "Почта"];
+  const links = [
+    { label: "Dprofile", href: "https://dprofile.ru/green" },
+    { label: "Behance", href: "https://www.behance.net/kseniashevele" },
+    { label: "Написать мне", href: "https://t.me/shev_Kk" },
+    { label: "Почта", href: "mailto:green.ks@icloud.com" },
+  ];
+
   return (
     <nav className="floating-menu" aria-label="Контакты">
-      {links.map((link) => (
-        <span className="menu-item" key={link}>
-          <a href="#" onClick={(event) => event.preventDefault()}>
-            {link}
+      {links.map(({ label, href }) => (
+        <span className="menu-item" key={label}>
+          <a
+            href={href}
+            target={href.startsWith("mailto:") ? undefined : "_blank"}
+            rel={href.startsWith("mailto:") ? undefined : "noreferrer"}
+          >
+            {label}
           </a>
         </span>
       ))}
