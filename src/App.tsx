@@ -203,7 +203,11 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
 
 function ExperienceEntry({ item }: { item: Experience }) {
   return (
-    <article className={`experience ${item.compact ? "experience-compact" : ""}`}>
+    <article
+      className={`experience ${item.compact ? "experience-compact" : ""} ${
+        item.logo ? "has-logo" : "no-logo"
+      }`}
+    >
       <time>{item.year}</time>
       <span className="timeline-dot" aria-hidden="true" />
       <div className="experience-body">
