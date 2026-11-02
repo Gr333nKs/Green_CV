@@ -134,12 +134,18 @@ export default function CaseCashback() {
         </section>
 
         <h2 className="cashback-section-title">Конвертация трат</h2>
-        <ScreencastSlot label="Скринкаст 1 сценарий" />
+        <ScreencastSlot
+          label="Скринкаст 1 сценарий"
+          src={`${C}videos/scenario.mp4`}
+        />
 
         <h2 className="cashback-section-title cashback-units-title">
           Бытовые эквиваленты [единицы]
         </h2>
-        <ScreencastSlot label="Скринкаст единицы" />
+        <ScreencastSlot
+          label="Скринкаст единицы"
+          src={`${C}videos/units.mp4`}
+        />
 
         <PhaseBlock
           title="Ресерч"
@@ -229,7 +235,10 @@ export default function CaseCashback() {
           alt="Механика бустов в Кэшачке"
           aspectRatio="952 / 536"
         />
-        <ScreencastSlot label="Скринкаст бусты" />
+        <ScreencastSlot
+          label="Скринкаст бусты"
+          src={`${C}videos/boosts.mp4`}
+        />
         <CaseImage
           src="boost-result.webp"
           alt="Результат применения бустов"
