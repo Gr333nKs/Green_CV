@@ -6,8 +6,9 @@
 }
 
 .cashback-case-column {
-  width: 952px;
-  margin-left: calc(16.667vw + 28px);
+  width: min(952px, calc(100% - 48px));
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .cashback-case-header {
@@ -227,12 +228,6 @@
 }
 
 @media (max-width: 1200px) {
-  .cashback-case-column {
-    width: calc(100% - 48px);
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .cashback-back {
     left: 24px;
   }
