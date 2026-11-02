@@ -107,7 +107,7 @@ export default function CaseCashback() {
 
       <main className="cashback-case-column">
         <CaseImage
-          src="hero.jpg"
+          src="hero.webp"
           alt="Кэшач0к — игровой финансовый трекер"
           aspectRatio="952 / 551"
           className="cashback-case-hero"
@@ -153,18 +153,18 @@ export default function CaseCashback() {
         />
 
         <CaseImage
-          src="research.png"
+          src="research.webp"
           alt="Исследование и конкурентный анализ Кэшачка"
           aspectRatio="952 / 494"
           objectPosition="50% 100%"
         />
         <CaseImage
-          src="units.png"
+          src="units.webp"
           alt="Механика бытовых эквивалентов"
           aspectRatio="952 / 470"
         />
         <CaseImage
-          src="equivalents.png"
+          src="equivalents.webp"
           alt="Примеры пересчёта трат в бытовые единицы"
           aspectRatio="952 / 442"
           objectPosition="50% 100%"
@@ -185,23 +185,23 @@ export default function CaseCashback() {
         />
 
         <CaseImage
-          src="brand-story.jpg"
+          src="brand-story.webp"
           alt="Разработка бренда Кэшачок"
           aspectRatio="952 / 1744"
           objectPosition="50% 33%"
         />
         <CaseImage
-          src="brand-board.png"
+          src="brand-board.webp"
           alt="Визуальная система бренда Кэшачок"
           aspectRatio="952 / 535"
         />
         <CaseImage
-          src="product-screen-2.png"
+          src="product-screen-2.webp"
           alt="Коммуникационные материалы Кэшачка"
           aspectRatio="953 / 535"
         />
         <CaseImage
-          src="product-screen-1.png"
+          src="product-screen-1.webp"
           alt="Экраны мобильного продукта Кэшачок"
           aspectRatio="952 / 534"
         />
@@ -220,18 +220,18 @@ export default function CaseCashback() {
         />
 
         <CaseImage
-          src="product-summary.png"
+          src="product-summary.webp"
           alt="Продуктовый интерфейс Кэшачка"
           aspectRatio="952 / 535"
         />
         <CaseImage
-          src="boost-intro.png"
+          src="boost-intro.webp"
           alt="Механика бустов в Кэшачке"
           aspectRatio="952 / 536"
         />
         <ScreencastSlot label="Скринкаст бусты" />
         <CaseImage
-          src="boost-result.png"
+          src="boost-result.webp"
           alt="Результат применения бустов"
           aspectRatio="952 / 535"
         />
