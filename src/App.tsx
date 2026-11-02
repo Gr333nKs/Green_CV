@@ -1,4 +1,5 @@
-import { useState, type CSSProperties } from "react";
+import { useState, type CSSProperties, type ReactNode } from "react";
+import CaseCashback from "./CaseCashback";
 
 const A = "/assets/";
 
@@ -11,6 +12,7 @@ type Project = {
   description: string;
   image?: string;
   kind?: "cashback" | "laba" | "nda";
+  href?: string;
 };
 
 type Experience = {
@@ -69,6 +71,7 @@ const experiences: Experience[] = [
         description:
           "Игровой финансовый трекер. Разработка геймифицированного приложения EdTech × FinTech + стратегии продвижения + MVP(3)",
         kind: "cashback",
+        href: "/cases/cashback",
       },
       {
         title: "SHAPE",
@@ -183,6 +186,28 @@ function ProjectArt({ project }: { project: Project }) {
 
 function ProjectRow({ project, index }: { project: Project; index: number }) {
   const featured = project.kind === "cashback" || project.kind === "laba";
+  const content: ReactNode = (
+    <>
+      <ProjectArt project={project} />
+      <span className="project-copy">
+        <strong>{project.title}</strong>
+        <span>{project.description}</span>
+      </span>
+    </>
+  );
+
+  if (project.href) {
+    return (
+      <a
+        className={`project ${featured ? "project-featured" : ""}`}
+        href={project.href}
+        aria-label={`${project.title}. Открыть страницу кейса`}
+        data-case-index={index}
+      >
+        {content}
+      </a>
+    );
+  }
 
   return (
     <button
@@ -192,11 +217,7 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
       title="Страница кейса появится позже"
       data-case-index={index}
     >
-      <ProjectArt project={project} />
-      <span className="project-copy">
-        <strong>{project.title}</strong>
-        <span>{project.description}</span>
-      </span>
+      {content}
     </button>
   );
 }
@@ -310,7 +331,7 @@ function FloatingMenu() {
   );
 }
 
-export default function App() {
+function PortfolioPage() {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -332,4 +353,14 @@ export default function App() {
       <FloatingMenu />
     </div>
   );
+}
+
+export default function App() {
+  const path = window.location.pathname.replace(/\/+$/, "") || "/";
+
+  if (path === "/cases/cashback") {
+    return <CaseCashback />;
+  }
+
+  return <PortfolioPage />;
 }

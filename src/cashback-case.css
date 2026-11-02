@@ -1,0 +1,309 @@
+.cashback-case-page {
+  min-height: 100vh;
+  padding: 36px 0 96px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.cashback-case-column {
+  width: 952px;
+  margin-left: calc(16.667vw + 28px);
+}
+
+.cashback-case-header {
+  position: relative;
+}
+
+.cashback-case-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cashback-case-heading h1,
+.cashback-case-heading p,
+.cashback-case-page h2,
+.cashback-case-page p {
+  margin: 0;
+}
+
+.cashback-case-heading h1,
+.cashback-case-page h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.22px;
+}
+
+.cashback-case-heading p {
+  margin-top: 8px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.17px;
+}
+
+.cashback-back,
+.cashback-dprofile {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 10px;
+  background: #eeeef2;
+  color: #000;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease-out,
+    transform 180ms var(--ease-out);
+}
+
+.cashback-back {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  gap: 8px;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.2px;
+}
+
+.cashback-back img {
+  flex: 0 0 auto;
+  transform: rotate(180deg);
+}
+
+.cashback-dprofile {
+  margin-top: 8px;
+  padding: 5px 10px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1;
+  letter-spacing: -0.17px;
+}
+
+.cashback-back:hover,
+.cashback-dprofile:hover {
+  background: #e7e7ec;
+  transform: translateY(-1px);
+}
+
+.cashback-back:focus-visible,
+.cashback-dprofile:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
+.cashback-case-hero {
+  margin-top: 19px;
+}
+
+.cashback-case-media {
+  width: 100%;
+  margin: 24px 0 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #eeeef2;
+}
+
+.cashback-case-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cashback-idea {
+  margin-top: 20px;
+}
+
+.cashback-idea-copy {
+  margin-top: 17px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.17px;
+}
+
+.cashback-idea-copy p + p {
+  margin-top: 22px;
+}
+
+.cashback-callout {
+  width: fit-content;
+  margin: 18px auto 0 !important;
+  padding: 0 10px;
+  border-radius: 10px;
+  background: rgba(40, 193, 106, 0.1);
+  color: var(--green);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.17px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cashback-section-title {
+  margin-top: 22px !important;
+}
+
+.cashback-units-title {
+  margin-top: 39px !important;
+}
+
+.cashback-screencast {
+  display: grid;
+  width: 100%;
+  aspect-ratio: 952 / 538;
+  margin-top: 27px;
+  overflow: hidden;
+  place-items: center;
+  border-radius: 20px;
+  background: #eeeef2;
+}
+
+.cashback-screencast span {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.22px;
+}
+
+.cashback-screencast video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cashback-phase {
+  width: 456px;
+  margin-top: 44px;
+  margin-bottom: 54px;
+}
+
+.cashback-phase-body {
+  position: relative;
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
+.cashback-phase-line {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.cashback-phase ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  gap: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.17px;
+  list-style: none;
+}
+
+.cashback-brand-phase {
+  margin-bottom: 55px;
+}
+
+.cashback-product-phase {
+  width: 772px;
+  margin-top: 48px;
+  margin-bottom: 46px;
+}
+
+.cashback-phase + .cashback-case-media,
+.cashback-product-phase + .cashback-case-media {
+  margin-top: 0;
+}
+
+@media (max-width: 1200px) {
+  .cashback-case-column {
+    width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cashback-back {
+    left: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cashback-case-page {
+    padding: 16px 0 64px;
+  }
+
+  .cashback-case-column {
+    width: calc(100% - 24px);
+  }
+
+  .cashback-case-header {
+    padding-top: 54px;
+  }
+
+  .cashback-case-heading {
+    gap: 16px;
+  }
+
+  .cashback-back {
+    top: 0;
+    left: 12px;
+  }
+
+  .cashback-dprofile {
+    margin-top: 0;
+    white-space: nowrap;
+  }
+
+  .cashback-case-media,
+  .cashback-screencast {
+    border-radius: 12px;
+  }
+
+  .cashback-idea-copy,
+  .cashback-callout,
+  .cashback-phase ul {
+    font-size: 14px;
+    letter-spacing: -0.14px;
+  }
+
+  .cashback-callout {
+    max-width: 100%;
+    padding: 6px 10px;
+    white-space: normal;
+  }
+
+  .cashback-screencast span {
+    font-size: 17px;
+    letter-spacing: -0.17px;
+  }
+
+  .cashback-phase,
+  .cashback-product-phase {
+    width: 100%;
+  }
+
+  .cashback-phase-body {
+    padding-left: 18px;
+  }
+
+  .cashback-phase-line {
+    display: none;
+  }
+
+  .cashback-phase ul {
+    gap: 8px;
+    padding-left: 14px;
+    border-left: 2px dashed var(--green);
+  }
+}
