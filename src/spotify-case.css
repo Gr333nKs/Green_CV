@@ -1,0 +1,128 @@
+.spotify-case-page {
+  min-height: 100vh;
+  padding: 36px 0 96px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.spotify-case-column {
+  width: min(952px, calc(100% - 48px));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.spotify-case-header {
+  position: relative;
+}
+
+.spotify-case-heading h1,
+.spotify-case-heading p {
+  margin: 0;
+}
+
+.spotify-case-heading h1 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.22px;
+}
+
+.spotify-case-heading p {
+  margin-top: 8px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.17px;
+}
+
+.spotify-back {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: #eeeef2;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease-out,
+    transform 180ms var(--ease-out);
+}
+
+.spotify-back img {
+  flex: 0 0 auto;
+  transform: rotate(180deg);
+}
+
+.spotify-back:hover {
+  background: #e7e7ec;
+  transform: translateY(-1px);
+}
+
+.spotify-back:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
+.spotify-case-content {
+  display: flex;
+  margin-top: 26px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.spotify-case-media {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.spotify-case-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1320px) {
+  .spotify-case-header {
+    padding-top: 54px;
+  }
+
+  .spotify-back {
+    left: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .spotify-case-page {
+    padding: 16px 0 64px;
+  }
+
+  .spotify-case-column {
+    width: calc(100% - 24px);
+  }
+
+  .spotify-back {
+    top: 0;
+    left: 12px;
+  }
+
+  .spotify-case-content {
+    margin-top: 20px;
+    gap: 12px;
+  }
+
+  .spotify-case-media {
+    border-radius: 12px;
+  }
+}

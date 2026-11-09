@@ -1,5 +1,6 @@
 import { useState, type CSSProperties, type ReactNode } from "react";
 import CaseCashback from "./CaseCashback";
+import CaseSpotify from "./CaseSpotify";
 
 const A = "/assets/";
 
@@ -56,6 +57,7 @@ const experiences: Experience[] = [
         title: "Spotify Mind",
         description: "Сервис нейропсихотерапии в экосистеме Spotify",
         image: `${A}spotify.png`,
+        href: "/cases/spotify-mind",
       },
     ],
   },
@@ -360,6 +362,10 @@ export default function App() {
 
   if (path === "/cases/cashback") {
     return <CaseCashback />;
+  }
+
+  if (path === "/cases/spotify-mind") {
+    return <CaseSpotify />;
   }
 
   return <PortfolioPage />;
